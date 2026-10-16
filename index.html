@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Crave & Save is an upcoming recipe, meal planning, and grocery comparison app designed to make everyday cooking and shopping easier.">
+  <meta name="theme-color" content="#166b58">
+  <title>Crave & Save | Recipes, Planning & Smart Shopping</title>
+  <style>
+    :root {
+      --green: #166b58;
+      --mint: #eaf5ef;
+      --cream: #fffaf2;
+      --ink: #24352e;
+      --muted: #617168;
+      --orange: #ed9554;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    header {
+      background: white;
+      border-bottom: 1px solid #e4e9e4;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand {
+      color: var(--green);
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: -.7px;
+    }
+    nav a {
+      color: var(--ink);
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    nav a:hover, a:hover { text-decoration: underline; }
+    .hero {
+      padding: 85px 7% 90px;
+      text-align: center;
+      background: linear-gradient(145deg, #e6f4eb, #fff8ed);
+    }
+    .eyebrow {
+      color: var(--green);
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+    h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.12;
+      letter-spacing: -2px;
+      margin: 18px auto;
+      max-width: 850px;
+    }
+    h1 span { color: var(--green); }
+    .hero p {
+      font-size: 19px;
+      color: var(--muted);
+      max-width: 680px;
+      margin: 20px auto 30px;
+    }
+    .pill {
+      display: inline-block;
+      background: white;
+      color: var(--green);
+      border: 1px solid #bedbc9;
+      padding: 9px 18px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    section { padding: 65px 7%; }
+    .section-title {
+      text-align: center;
+      font-size: clamp(28px, 4vw, 39px);
+      line-height: 1.2;
+      margin: 0 0 15px;
+    }
+    .section-intro {
+      text-align: center;
+      color: var(--muted);
+      max-width: 680px;
+      margin: 0 auto 35px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      max-width: 1150px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e4ebe5;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 6px 25px #193b2710;
+    }
+    .card .emoji { font-size: 32px; }
+    .card h3 { color: var(--green); margin-bottom: 8px; }
+    .card p { color: var(--muted); margin: 0; }
+    .soft { background: var(--mint); }
+    .content {
+      max-width: 850px;
+      margin: auto;
+    }
+    .content h2 { color: var(--green); }
+    .content p { color: #4c5c53; }
+    .contact {
+      text-align: center;
+      background: var(--green);
+      color: white;
+    }
+    .contact p { color: #e1f0e7; }
+    .contact a {
+      color: white;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+    footer {
+      background: #103f34;
+      color: #e3eee7;
+      padding: 25px 7%;
+      text-align: center;
+      font-size: 13px;
+    }
+    footer a { color: white; }
+    a:focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 4px;
+    }
+    @media (max-width: 600px) {
+      header { justify-content: center; text-align: center; }
+      nav a { margin: 0 9px; }
+      .hero { padding: 60px 6%; }
+      section { padding: 50px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">🍽️ Crave & Save</div>
+  <nav aria-label="Main navigation">
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="eyebrow">Your kitchen. Your recipes. Your savings.</div>
+    <h1>Crave it. Plan it. <span>Save it.</span></h1>
+    <p>
+      Meet Crave & Save, an upcoming recipe organizer, meal planner,
+      and grocery shopping companion designed to make feeding
+      your family easier and more affordable.
+    </p>
+    <div class="pill">🌿 Currently in development</div>
+    <p style="font-size:15px">
+      Planned for iPhone and Android.
+      Free core features, with an optional ad-free experience.
+    </p>
+  </div>
+
+  <section id="features">
+    <h2 class="section-title">Everything for a smarter kitchen</h2>
+    <p class="section-intro">
+      We're bringing recipes, family planning, and grocery shopping
+      together in one convenient app.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="emoji" aria-hidden="true">📖</div>
+        <h3>Save Your Recipes</h3>
+        <p>
+          Organize favorite recipes and explore importing recipes
+          from photos, screenshots, and supported sources.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="emoji" aria-hidden="true">🗓️</div>
+        <h3>Plan Family Meals</h3>
+        <p>
+          Build meal plans, organize weekly menus, and prepare
+          shopping lists based on what you want to cook.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="emoji" aria-hidden="true">🛒</div>
+        <h3>Compare Grocery Costs</h3>
+        <p>
+          Our planned shopping tools aim to compare supported
+          retailer prices, quantities, and shopping costs to
+          help families make informed choices.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="emoji" aria-hidden="true">👨‍👩‍👧‍👦</div>
+        <h3>Share With Family</h3>
+        <p>
+          Keep favorite meals and planning tools organized
+          across a household with family-sharing features.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="emoji" aria-hidden="true">🌎</div>
+        <h3>Made for More Families</h3>
+        <p>
+          We're developing with accessibility in mind,
+          including screen-reader usability and future
+          international availability.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="emoji" aria-hidden="true">💚</div>
+        <h3>Free to Enjoy</h3>
+        <p>
+          Our goal is to keep the app's core features free,
+          supported by carefully selected advertising and
+          affiliate partnerships.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="soft">
+    <div class="content">
+      <h2>About Crave & Save</h2>
+      <p>
+        Crave & Save is an independent recipe, meal-planning,
+        and grocery comparison app currently being developed
+        in the United States.
+      </p>
+      <p>
+        Our mission is simple: help people spend less time
+        organizing meals and more time enjoying them, while
+        finding practical ways to save on everyday shopping.
+      </p>
+      <p>
+        We are currently developing and testing the application
+        and exploring authorized partnerships with grocery,
+        household, and retail brands.
+      </p>
+    </div>
+  </section>
+
+  <section id="partners">
+    <div class="content">
+      <h2>Retailer & Affiliate Partnerships</h2>
+      <p>
+        Crave & Save is exploring partnerships with retailers
+        and affiliate networks to connect shoppers with
+        relevant products and purchasing options.
+      </p>
+      <p>
+        We aim to compare shopping options fairly, including
+        retailers that do not offer affiliate commissions.
+        Product pricing and availability will depend on
+        authorized retailer data and integrations.
+      </p>
+      <p>
+        <strong>Affiliate disclosure:</strong>
+        When affiliate shopping links become available,
+        Crave & Save may earn a commission on qualifying
+        purchases at no additional charge through the
+        affiliate link itself. Affiliate relationships
+        will be disclosed to users.
+      </p>
+      <p>
+        Retailers and affiliate networks interested in
+        working with Crave & Save are welcome to contact us.
+      </p>
+    </div>
+  </section>
+
+  <section id="privacy" class="soft">
+    <div class="content">
+      <h2>Website Privacy Notice</h2>
+      <p>
+        This informational website does not currently
+        offer user registration, payment processing,
+        or a newsletter signup form.
+      </p>
+      <p>
+        GitHub Pages, our hosting provider, may process
+        technical information associated with website visits
+        according to its own privacy practices.
+      </p>
+      <p>
+        If you contact us by email, we will receive the
+        information you choose to provide and use it to
+        respond to your inquiry.
+      </p>
+      <p>
+        A separate, more detailed privacy policy will be
+        published for the Crave & Save mobile application
+        before public launch.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Let's Connect</h2>
+    <p>
+      For business inquiries, retailer partnerships,
+      or questions about Crave & Save:
+    </p>
+    <p>
+      <a href="mailto:Polittekimberlyr@gmail.com">
+        Polittekimberlyr@gmail.com
+      </a>
+    </p>
+    <p>Crave & Save — Coming Soon</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Crave & Save. All rights reserved.</p>
+  <p>
+    Independent app currently in development.
+    Retailer partnerships and availability are subject to approval.
+  </p>
+  <p><a href="#privacy">Website Privacy Notice</a></p>
+</footer>
+
+</body>
+</html>
